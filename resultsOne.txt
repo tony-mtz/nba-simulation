@@ -1,0 +1,7 @@
+mavericks         109.792   30.4% 
+thunder         117.788   68.0% 
+(-8.0)
+90% confidence interval : 28.843586182053212 and 31.95641381794679 
+90% confidence interval : 66.39933243163367 and 69.60066756836633 
+..
+..
