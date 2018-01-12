@@ -1,7 +1,3 @@
-
-
-
-
 '''
 List of all team with their team IDs
 '''

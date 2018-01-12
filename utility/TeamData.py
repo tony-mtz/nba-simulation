@@ -1,8 +1,6 @@
-
 import requests
 import pandas as pd
 #get team roster
-
 
 class TeamData:
     def __init__(self):
@@ -53,8 +51,7 @@ class TeamData:
             team = response.json()['resultSets'][0]['rowSet']
         
             team_df = pd.DataFrame(team, columns=headers)
-            team_df.to_csv('../2018/' + i[0]+'.csv')
-    
+            team_df.to_csv('../2018/' + i[0]+'.csv')    
     
      #box score
     def getGamesPlayedBox(self):
@@ -72,9 +69,7 @@ class TeamData:
     def loadTeamBox(self,teamName):
         stats_df = pd.read_csv('../teamGames/'+teamName+'.csv')
     #    teamStats = stats_df.loc[stats_df['TEAM_ID']==teamID]
-        return stats_df
-    
-    
+        return stats_df 
     
     #per game
     def getTeamStats(self):

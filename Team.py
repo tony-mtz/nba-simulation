@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 from Player import Player
 import numpy as np
@@ -25,8 +23,7 @@ class Team:
         self.teamStats = None
         self.loadTeamStats()
         self.teamStats100 = None
-        self.loadTeamStats100()
-        
+        self.loadTeamStats100()        
         
 #        self.shotdist = np.random.choice(self.playerIDS, p= self.shotDistPerPlayer)
         self.loadRoster()
