@@ -21,13 +21,13 @@ matches = [('warriors', 'clippers'),
            ]
 #ends at 3 jan
 
-f = open('jan6.txt', 'w')
+f = open('jan61.txt', 'w')
 for i in matches:
     win = 0
     team1 = i[0]
     team2 = i[1]
 
-    amount = 1
+    amount = 500
     score1 =0
     score2 =0
     
@@ -37,7 +37,7 @@ for i in matches:
     for i in range(amount):
     #    sim = BBallSim(team1, team2)
         
-        sim.genPoss()
+        sim.gameLoop()
         if sim.score[0] >sim.score[1]:
             percT1 += 1
         if sim.score[1] >sim.score[0]:
