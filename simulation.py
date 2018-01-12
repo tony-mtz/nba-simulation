@@ -10,24 +10,17 @@ import numpy as np
 from scipy.stats import norm
 from BBallSim import BBallSim
 
-matches = [('warriors', 'clippers'),
-           ('celtics', 'nets'),
-           ('rockets', 'pistons'),
-           ('bulls', 'pacers'),           
-           ('cavaliers', 'magic'),
-           ('bucks', 'wizards'),
-           ('pelicans', 'timberwolves'),
-           ('nuggets', 'kings')
-           ]
+matches = [('warriors', 'clippers')]
+           
 #ends at 3 jan
 
-f = open('jan61.txt', 'w')
+f = open('jan6.txt', 'w')
 for i in matches:
     win = 0
     team1 = i[0]
     team2 = i[1]
 
-    amount = 500
+    amount = 1500
     score1 =0
     score2 =0
     

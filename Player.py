@@ -15,8 +15,6 @@ class Player:
     def __init__(self, playerID ):
         self.playerID = playerID
         self.playerName = None
-        self.stats = self.loadPlayer(playerID)
-        self.totalShots = self.totShots()
         self.zones_list = [(u'Less Than 8 ft.', u'Center(C)'),
                            (u'8-16 ft.', u'Center(C)'),
                            (u'8-16 ft.', u'Left Side(L)'),
@@ -32,12 +30,13 @@ class Player:
                            (u'24+ ft.', u'Right Side Center(RC)'),
                            (u'24+ ft.', u'Right Side(R)'),
                            (u'Back Court Shot', u'Back Court(BC)')]
+        self.stats = self.loadPlayer(playerID)
+        self.totalShots = self.totShots()
+        
         self.shotChart = []
         self.shotAccuracy = []
         self.shotChartDist()
-        self.shotAccur()
-#        self.getPlayerName()
-        
+        self.shotAccur()       
     
     
     #total shots taking by the player from all locations
