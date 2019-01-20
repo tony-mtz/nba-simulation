@@ -12,7 +12,7 @@ spread and the FiveThirtyEight spread. The spread is the number of points a team
 to win by. For example, if the home team is predicted to win by 2 points, then the spread is -2.
 
 # Data Collection 
-Team and player data will be gathered from stats.nba.com. This is a freely accessible website hosted by the NBA. This site contains a rich set of information, such as the exact location of every shot for every game. Unfortunately, this site does not have a public API, so scripts will be devised for data scrapping. Once that data is gathered it will be transformed into data that will allow us to easily calculate various probability distributions. Below is a list of collected data.  
+Team and player data will be gathered from stats.nba.com. This is a freely accessible website hosted by the NBA. This site contains a rich set of information, such as the exact location of every shot for every game. Unfortunately, this site does not have a public API, so scripts will be devised for data scraping. Once that data is gathered it will be transformed into data that will allow us to easily calculate various probability distributions. Below is a list of collected data.  
 
 * Team Rosters: The team rosters for each of the 30 teams in the NBA. Of particular
 importance is the player ID used to store each player’s statistics.
